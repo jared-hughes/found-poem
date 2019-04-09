@@ -7,13 +7,17 @@
   .poem-block {
     width: $width;
     height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .poem-text {
       padding: 20px;
+      border-radius: 8px;
 
       &.light {
         color: white;
-        background: rgba(10, 10, 10, 0.7);
+        background: rgba(0, 0, 0, 0.7);
       }
 
       &.dark {
