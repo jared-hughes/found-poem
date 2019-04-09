@@ -8,8 +8,14 @@ class PoemBlock extends Component {
 
     let text = stripFirstLineWhitespace(data.text);
 
+    let classes = ["poem-block"];
+    if (this.props.visible) {
+      classes.push("visible");
+    }
+    let className = classes.join(" ");
+
     return (
-      <div className="poem-block"
+      <div className={ className }
         style={{backgroundImage: `url(${ data.background })`}}>
         <div className="poem-text">
           <Markdown>

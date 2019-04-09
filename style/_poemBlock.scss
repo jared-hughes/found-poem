@@ -1,0 +1,22 @@
+// main: style.scss
+
+.poem-block {
+  position: absolute;
+  top: 0;
+  width: $width;
+  height: $height;
+  @include center-children();
+  opacity: 0;
+
+  &.visible {
+    opacity: 100;
+  }
+
+  .poem-text {
+    padding: 20px;
+    border-radius: 8px;
+
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+  }
+}

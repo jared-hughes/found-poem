@@ -1,6 +1,8 @@
 @import 'node_modules/normalize-scss/sass/normalize';
 
 @import 'config';
+@import 'mixins';
 
 @import 'global';
-@import 'blocks';
+@import 'found';
+@import 'poemBlock';
