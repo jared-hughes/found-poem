@@ -8,6 +8,15 @@ class Found extends Component {
     return (
       <div className="found-poem">
         <PoemBlock data={original}/>
+        <div className="derivative-poems">
+          {
+            sources.map((data, index) =>
+              (
+                <PoemBlock data={data} key={index}/>
+              )
+            )
+          }
+        </div>
       </div>
     )
   }

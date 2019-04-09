@@ -15,14 +15,8 @@
       padding: 20px;
       border-radius: 8px;
 
-      &.light {
-        color: white;
-        background: rgba(0, 0, 0, 0.7);
-      }
-
-      &.dark {
-        color: black;
-      }
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
     }
   }
 }

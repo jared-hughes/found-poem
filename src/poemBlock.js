@@ -6,19 +6,12 @@ class PoemBlock extends Component {
   render() {
     let data = this.props.data;
 
-    let textClass = "poem-text";
-    if (data.light) {
-      textClass += " light";
-    } else {
-      textClass += " dark";
-    }
-
     let text = stripFirstLineWhitespace(data.text);
 
     return (
       <div className="poem-block"
         style={{backgroundImage: `url(${ data.background })`}}>
-        <div className={ textClass }>
+        <div className="poem-text">
           <Markdown>
             { text }
           </Markdown>
