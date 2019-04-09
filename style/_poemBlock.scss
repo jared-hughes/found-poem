@@ -16,7 +16,7 @@
     padding: 20px;
     border-radius: 8px;
 
-    color: white;
+    color: transparentize($font-color, 0.8);
     background: rgba(0, 0, 0, 0.7);
   }
 }
