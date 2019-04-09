@@ -12,6 +12,13 @@
     opacity: 100;
   }
 
+  @media print {
+    opacity: 100;
+    position: relative;
+    page-break-inside: avoid;
+    page-break-after: always;
+  }
+
   .poem-text {
     padding: 20px;
     border-radius: 8px;

@@ -5,9 +5,17 @@
   width: 100vw;
   @include center-children();
 
+  @media print {
+    height: 3 * $height;
+  }
+
   .found-poem {
     width: $width;
     height: $height;
+
+    @media print {
+      height: 3 * $height;
+    }
 
     .derivative-poems {
       position: relative;
