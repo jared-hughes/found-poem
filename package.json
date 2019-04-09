@@ -1,0 +1,30 @@
+{
+  "name": "found-poem",
+  "version": "1.0.0",
+  "description": "Animated found poem",
+  "private": "true",
+  "scripts": {
+    "build-js": "webpack",
+    "build-css": "node-sass style/style.scss --output dist",
+    "build": "npm run build-css && npm run build-js",
+    "watch-js": "webpack --watch",
+    "watch-css": "npm run build-css && node-sass --watch style/style.scss --output dist",
+    "watch": "npm run watch-css & npm run watch-js"
+  },
+  "author": "Jared Hughes",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-react-app": "^7.0.2",
+    "node-sass": "^4.11.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
