@@ -1,0 +1,24 @@
+// main: style.scss
+
+.found-poem {
+  width: $width;
+  margin: 0 auto;
+
+  .poem-block {
+    width: $width;
+    height: $height;
+
+    .poem-text {
+      padding: 20px;
+
+      &.light {
+        color: white;
+        background: rgba(10, 10, 10, 0.7);
+      }
+
+      &.dark {
+        color: black;
+      }
+    }
+  }
+}

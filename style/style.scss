@@ -1,5 +1,6 @@
-body {
-  div {
-    background: pink
-  }
-}
+@import 'node_modules/normalize-scss/sass/normalize';
+
+@import 'config';
+
+@import 'global';
+@import 'blocks';
