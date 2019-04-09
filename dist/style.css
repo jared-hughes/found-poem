@@ -1,0 +1,52 @@
+* {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px; }
+
+body, html {
+  margin: 0;
+  padding: 0; }
+
+.found-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media print {
+    .found-wrapper {
+      height: 2400px; } }
+  .found-wrapper .found-poem {
+    width: 1200px;
+    height: 800px; }
+    @media print {
+      .found-wrapper .found-poem {
+        height: 2400px; } }
+    .found-wrapper .found-poem .derivative-poems {
+      position: relative; }
+
+.poem-block {
+  position: absolute;
+  top: 0;
+  width: 1200px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in; }
+  .poem-block.visible {
+    opacity: 100; }
+  @media print {
+    .poem-block {
+      opacity: 100;
+      position: relative;
+      page-break-inside: avoid;
+      page-break-after: always; } }
+  .poem-block .poem-text {
+    padding: 20px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.7); }
+
+.poem-highlight {
+  color: #FFF; }
